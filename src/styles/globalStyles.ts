@@ -1,6 +1,8 @@
 import { StyleSheet } from "react-native";
 import { appColors } from "../constants/appColors";
 import { appInfo } from "../constants/appInfo";
+import { Text } from "react-native-reanimated/lib/typescript/Animated";
+import { fontFamilies } from "../constants/fontFamilies";
 
 export const globalStyles = StyleSheet.create ({
     container:{ 
@@ -20,4 +22,9 @@ export const globalStyles = StyleSheet.create ({
         borderTopLeftRadius: 60,
         borderTopRightRadius: 60,
     },
+    text: {
+        fontFamily: fontFamilies.regular,
+        fontSize: 14,
+        color: appColors.black,
+    }
 })

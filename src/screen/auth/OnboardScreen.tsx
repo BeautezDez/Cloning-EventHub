@@ -5,6 +5,8 @@ import Swiper from 'react-native-swiper'
 import { appColors } from '../../constants/appColors'
 import SpaceComponent from '../../components/SpaceComponent'
 import { appInfo } from '../../constants/appInfo'
+import TextComponent from '../../components/TextComponent'
+import { fontFamilies } from '../../constants/fontFamilies'
 
 export default function OnboardScreen({ navigation }: any) {
     const swiperRef = useRef(null);
@@ -29,12 +31,9 @@ export default function OnboardScreen({ navigation }: any) {
                     <SpaceComponent height={appInfo.sizes.HEIGHT * 0.12} />
                     <Image source={require('../../assets/image/onboard-1.png')} style={[globalStyles.card]} />
                     <View style={[globalStyles.onboardswipe]}>
-                        <Text style={[styles.headertext]}>
-                            Explore Upcoming and Nearby Events
-                        </Text>
-                        <Text style={[styles.contenttext]}>
-                            In publishing and graphic design, Lorem is a placeholder text commonly
-                        </Text>
+                        <TextComponent text='Explore Upcoming and Nearby Events' styles={[styles.headertext]}/>
+                        <TextComponent text='In publishing and graphic design, Lorem is a placeholder text commonly' styles={[styles.contenttext]}/>
+
 
                     </View>
                 </View>
@@ -42,34 +41,29 @@ export default function OnboardScreen({ navigation }: any) {
                     <SpaceComponent height={appInfo.sizes.HEIGHT * 0.12} />
                     <Image source={require('../../assets/image/onboard-2.png')} style={[globalStyles.card]} />
                     <View style={[globalStyles.onboardswipe]}>
-                        <Text style={[styles.headertext]}>
-                            Web Have Modern Events Calendar Feature
-                        </Text>
-                        <Text style={[styles.contenttext]}>
-                            In publishing and graphic design, Lorem is a placeholder text commonly
-                        </Text>
+                    <TextComponent text='Web Have Modern Events Calendar Feature' styles={[styles.headertext]}/>
+
+                        <TextComponent text='In publishing and graphic design, Lorem is a placeholder text commonly' styles={[styles.contenttext]}/>
+
                     </View>
                 </View>
                 <View style={[globalStyles.container]}>
                     <SpaceComponent height={appInfo.sizes.HEIGHT * 0.12} />
                     <Image source={require('../../assets/image/onboard-3.png')} style={[globalStyles.card]} />
                     <View style={[globalStyles.onboardswipe]}>
-                        <Text style={[styles.headertext]}>
-                            To Look Up More Events or Activities Nearby By Map
-                        </Text>
-                        <Text style={[styles.contenttext]}>
-                            In publishing and graphic design, Lorem is a placeholder text commonly
-                        </Text>
+                    <TextComponent text='To Look Up More Events or Activities Nearby By Map' styles={[styles.headertext]}/>
+                        <TextComponent text='In publishing and graphic design, Lorem is a placeholder text commonly' styles={[styles.contenttext]}/>
+
 
                     </View>
                 </View>
             </Swiper>
             <View style={[styles.touchButton]}>
                 <TouchableOpacity onPress={() => navigation.navigate('LoginScreen')}>
-                    <Text style={[styles.buttontext]}> Skip</Text>
+                    <TextComponent text='Skip' styles={[styles.buttontext]}/>
                 </TouchableOpacity>
                 <TouchableOpacity onPress={handleNextPress}>
-                    <Text style={[styles.buttontext]}> Next</Text>
+                <TextComponent text='Next' styles={[styles.buttontext]}/>
                 </TouchableOpacity>
             </View>
         </View>
@@ -90,7 +84,7 @@ const styles = StyleSheet.create({
     },
     headertext: {
         color: appColors.white,
-        fontSize: 22,
+        fontSize: 20,
         fontWeight: 'medium',
         paddingHorizontal: appInfo.sizes.WIDTH * 0.15,
         paddingTop: 40,
@@ -106,6 +100,7 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         textAlign: 'center',
         lineHeight: 25,
+        fontFamily: fontFamilies.light,
     },
     buttontext: {
         color: appColors.white,
