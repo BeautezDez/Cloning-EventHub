@@ -85,7 +85,6 @@ const styles = StyleSheet.create({
     headertext: {
         color: appColors.white,
         fontSize: 20,
-        fontWeight: 'medium',
         paddingHorizontal: appInfo.sizes.WIDTH * 0.15,
         paddingTop: 40,
         justifyContent: 'center',
