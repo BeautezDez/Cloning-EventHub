@@ -7,7 +7,7 @@ import { fontFamilies } from "../constants/fontFamilies";
 export const globalStyles = StyleSheet.create ({
     container:{ 
         flex: 1,
-        backgroundColor: appColors.white,
+        backgroundColor: appColors.grayBg,
     },
     card: {
         marginHorizontal: appInfo.sizes.WIDTH*0.125,

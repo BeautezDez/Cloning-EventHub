@@ -6,5 +6,6 @@ export const appColors = {
     black: '#120D26',
     white: '#fff',
     typo3: '#888693',
-    typo4: '#B8B6BE'
+    typo4: '#B8B6BE',
+    typo5: '#D0CFD4'
 }
