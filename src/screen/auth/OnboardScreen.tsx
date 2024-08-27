@@ -90,6 +90,7 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         textAlign: 'center',
         lineHeight: 34,
+        fontFamily: fontFamilies.regular
     },
     contenttext: {
         color: appColors.white,
