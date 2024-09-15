@@ -5,6 +5,8 @@ import AuthNavigator from './src/screen/navigators/AuthNavigator'
 import { StatusBar } from 'react-native'
 import { useAsyncStorage } from '@react-native-async-storage/async-storage'
 import MainNavigator from './src/screen/navigators/MainNavigator'
+import SpaceComponent from './src/components/SpaceComponent'
+import { appInfo } from './src/constants/appInfo'
 
 const App = () => {
   const [isShowSplash, setisShowSplash] = useState(false)
